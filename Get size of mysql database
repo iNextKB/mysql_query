@@ -1,3 +1,5 @@
+# You can use this script before you backup the databse get a file size of current
+=================================================================================
 SELECT table_schema "User DatabaseName",
         ROUND(SUM(data_length + index_length) / 1024 / 1024 / 1024, 1) "DB Size in GB" 
 FROM information_schema.tables 
